@@ -19,7 +19,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, device/sony/kitakami-common/platform.mk)
+$(call inherit-product, device/sony/kitakami-common/platform_omni.mk)
 $(call inherit-product, vendor/sony/sumire/sumire-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
