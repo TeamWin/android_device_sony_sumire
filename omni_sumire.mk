@@ -24,9 +24,6 @@ DEVICE_RESOLUTION := 1440x814
 # Inherit AOSP Rhine common device parts
 $(call inherit-product, device/sony/sumire/aosp_e6653.mk)
 
-# Inherit Omni Rhine common device parts
-$(call inherit-product, device/sony/kitakami-common/device_omni.mk)
-
 # Inherit Omni GSM telephony parts
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
