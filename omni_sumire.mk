@@ -22,6 +22,7 @@ DEVICE_RESOLUTION := 1440x814
 $(call inherit-product, device/sony/sumire/aosp_e6653.mk)
 
 # Inherit Omni GSM telephony parts
+$(call inherit-product, device/sony/common/radio.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Inherit Omni product configuration
@@ -33,10 +34,6 @@ $(call inherit-product, device/sony/sumire/twrp.mk)
 # Recovery
 PRODUCT_COPY_FILES += \
     device/sony/sumire/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device
-
-# Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    telephony.lteOnGSMDevice=1
 
 # Override Product Name for OmniROM
 PRODUCT_NAME := omni_sumire
