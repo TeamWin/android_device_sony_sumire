@@ -17,6 +17,8 @@ TARGET_OTA_ASSERT_DEVICE := E6653,sumire
 
 # TWRP Recovery
 DEVICE_RESOLUTION := 1440x814
+TW_THEME := portrait_hdpi
+TW_IGNORE_ABS_MT_TRACKING_ID := true
 
 # Inherit AOSP Rhine common device parts
 $(call inherit-product, device/sony/sumire/aosp_e6653.mk)
@@ -27,9 +29,6 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Inherit Omni product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
-
-# Inherit TWRP requirements
-$(call inherit-product, device/sony/sumire/twrp.mk)
 
 # Override Product Name for OmniROM
 PRODUCT_NAME := omni_sumire
