@@ -31,10 +31,6 @@ $(call inherit-product, vendor/omni/config/common.mk)
 # Inherit TWRP requirements
 $(call inherit-product, device/sony/sumire/twrp.mk)
 
-# Recovery
-PRODUCT_COPY_FILES += \
-    device/sony/sumire/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device
-
 # Override Product Name for OmniROM
 PRODUCT_NAME := omni_sumire
 PRODUCT_MODEL := Xperia Z5
