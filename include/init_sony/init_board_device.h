@@ -22,7 +22,9 @@
 #include "init_prototypes.h"
 
 // Constants: devices controls
-#define DEV_BLOCK_FOTA_NUM 16
+#define DEV_BLOCK_FOTA_NUM 32
+#define DEV_BLOCK_FOTA_MAJOR 259
+#define DEV_BLOCK_FOTA_MINOR 0
 
 // Class: init_board_device
 class init_board_device : public init_board_common

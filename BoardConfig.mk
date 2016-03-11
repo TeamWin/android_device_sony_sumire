@@ -14,6 +14,8 @@
 
 include device/sony/kitakami-common/PlatformConfigOmni.mk
 
+TARGET_SPECIFIC_HEADER_PATH += device/sony/sumire/include
+
 TARGET_BOOTLOADER_BOARD_NAME := E6653
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=sumire
