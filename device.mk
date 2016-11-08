@@ -61,13 +61,17 @@ PRODUCT_PACKAGES += \
     InCallUI \
     Stk
 
-PRODUCT_AAPT_CONFIG := large
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=480 \
     ro.usb.pid_suffix=1D9
+
+## 8MP Switch for ES
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.8mp.config=true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/kitakami-common/platform_omni.mk)
