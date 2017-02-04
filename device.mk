@@ -81,4 +81,4 @@ $(call inherit-product, device/sony/kitakami-common/platform_omni.mk)
 $(call inherit-product, vendor/sony/kitakami-sumire/sumire-vendor.mk)
 
 # copy wlan firmware
-$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4356/device-bcm.mk)
+$(call inherit-product-if-exists, vendor/sony/aosp_broadcom/wlan/bcmdhd/firmware/bcm4356/device-bcm.mk)
